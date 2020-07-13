@@ -1,15 +1,16 @@
 import React from 'react'
+import styled from 'styled-components';
 
 const Navbar = () => {
     return (
-        <div>
+        <div style={{ borderBottom: '5px #ccc solid' }}>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <a className="navbar-brand" href="#">Jeff's Board of Scores</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
 
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+  <NavbarContainer className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav ml-auto">
       <li className="nav-item active">
         <a className="nav-link" href="#">NBA <span className="sr-only">(current)</span></a>
@@ -26,13 +27,25 @@ const Navbar = () => {
       <li className="nav-item active">
         <a className="nav-link" href="#">NHL <span className="sr-only">(current)</span></a>
       </li>
+      <li className="nav-item active">
+        <a className="nav-link" href="#">Source Code <span className="sr-only">(current)</span></a>
+      </li>
       <li className="nav-item">
       </li>
     </ul>
-  </div>
+  </NavbarContainer>
 </nav>
         </div>
     )
 }
 
 export default Navbar
+
+// Navbar Container
+const NavbarContainer = styled.div`
+.nav-link {
+    &:hover {
+        background: var(--light-green);
+    }
+}
+`;
