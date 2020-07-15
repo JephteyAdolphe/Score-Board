@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <div style={{ borderBottom: '5px #ccc solid' }}>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#">Jeff's Board of Scores</a>
+  <a className="navbar-brand" href="http://localhost:3000/">Jeff's Board of Scores</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -27,6 +27,7 @@ const Navbar = () => {
       <li className="nav-item active">
         <a className="nav-link" href="#">NHL <span className="sr-only">(current)</span></a>
       </li>
+      <div className="divider" />
       <li className="nav-item active">
         <a className="nav-link" href="#">Source Code <span className="sr-only">(current)</span></a>
       </li>
@@ -47,5 +48,9 @@ const NavbarContainer = styled.div`
     &:hover {
         background: var(--light-green);
     }
+}
+.divider {
+    border-left: 3px solid #277;
+    height: 40px;
 }
 `;

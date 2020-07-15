@@ -5,15 +5,13 @@ const Footer = () => {
     return (
         <div>
             <FooterContainer>
-            <ul className="navbar-nav mc-auto">
-      <li className="nav-item active">
-        <a className="nav-link" href="https://www.linkedin.com/in/jephtey-adolphe-160166147/">LinkedIn <span className="sr-only">(current)</span></a>
-      </li>
-      <li className="nav-item active">
-        <a className="nav-link" href="https://github.com/JephteyAdolphe">GitHub <span className="sr-only">(current)</span></a>
-      </li>
-    </ul>
-        </FooterContainer>
+                <ul className="navbar-nav mc-auto">
+                    <li className="nav-item active" style={{ display: 'inline-block' }}>
+                        <a className="nav-link" href="https://www.linkedin.com/in/jephtey-adolphe-160166147/">LinkedIn <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="https://github.com/JephteyAdolphe">GitHub <span className="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </FooterContainer>
         </div>
     )
 }
